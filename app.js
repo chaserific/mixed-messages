@@ -22,7 +22,9 @@ submitButton.onclick = () => {
   let name = document.querySelector("#name").value;
   let question = document.querySelector("#question").value;
 
-  let output = `Hi ${name}! The answer to "${question}" is: ${response}`;
+  let output = `Hi ${name}!<br>`;
+  output += `Your question: ${question}<br>`
+  output += `The answer: <strong>${response}</strong>`;
   console.log(output);
   document.getElementById("answer").innerHTML = output;
 };

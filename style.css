@@ -16,6 +16,7 @@ body {
   color: white;
   border-radius: 50%;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 #ball * {
