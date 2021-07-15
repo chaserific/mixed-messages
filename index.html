@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<head>
-  <html charset="utf-8" lang="en"></html>
-  <h1>Magic 8 Ball</h1>
+<html>
+  <head>
+    <title>Magic 8 Ball</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+
   <body>
-    <script src="app.js"></script>
-      <form>Ask a question</form>
-      <button id="submit">Submit</button>
-    <div class="message"></div>
+    <div id="ball">
+      <h1>Magic 8 Ball</h1>
+
+      <form>
+        <label for="name">Name: </label>
+        <input type="text" id="name" value=""><br>
+        <label>Ask a question: </label>
+        <input type="text" id="question" value=""><br>
+        <button type="button" id="submit">Submit</button>
+      </form>
+
+      <div id="answer">
+        <input type="text">
+      </div>
+    </div>
   </body>
-</head>
+
+  <script src="app.js"></script>
+</html>
